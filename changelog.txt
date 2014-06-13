@@ -1,0 +1,8 @@
+1.0.1
+- Added more options: Move episode files into season folders
+- Translations
+- Dialogs and progress bar
+
+1.0.0
+Initial Release: 
+- Possibility to rename movies and tv shows using a defined name pattern.

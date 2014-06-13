@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="32001">
+        <setting label="32011" id="moviepattern" type="text" default="#TITLE# [#YEAR#]#EXT#" />
+        <setting label="32012" id="tvpattern" type="text" default="#SHOWTITLE# - S#SEASON#E#EPISODE# - #TITLE##EXT#" />
+        <setting label="32013" id="seasonfolder" type="bool" default="true" />
+    </category>
+</settings>
