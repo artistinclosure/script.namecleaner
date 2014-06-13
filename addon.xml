@@ -11,8 +11,8 @@
       <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Automatically renames movies and TV shows</summary>
-    <description lang="en">Automatically renames movies and TV shows</description>
+    <summary lang="en">Automatically renames filenames of movies and TV shows</summary>
+    <description lang="en">Automatically renames movie and TV show files to match the provided pattern.</description>
     <disclaimer lang="en">No guarantees</disclaimer>
     <language></language>
     <platform>all</platform>
