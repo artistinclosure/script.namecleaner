@@ -152,13 +152,13 @@ class Main:
             # Display a progress. Shorten the names to make them fit inside the progress bar
             progress.update(100*i/len(list), self.shorten(s["file"]), self.shorten(newfile))
             # Rename the file
-            if s["file"] != newfile:
+            if s["file"].encode("utf-8") != newfile:
                 xbmc.log("renaming")
                 if xbmcvfs.rename(s["file"], newfile):
                 	# Rename successful. Update the entry in the database
                     xbmc.log("renaming successful. Updating database entry")
                     id = str(s[type["id"]])
-                    c.execute(type["updstmt"], [newfile, id])
+                    c.execute(type["updstmt"], [newfile.decode("utf-8"), id])
                     cursor = conn.execute(type["fileidstmt"], [id])
                     for row in cursor:
                         fileid = row[0]
