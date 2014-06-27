@@ -2,7 +2,6 @@
 <addon id="script.namecleaner" name="Video name cleaner" version="1.0.1" provider-name="ArtistInClosure">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="xbmc.gui" version="5.0.1" />
     <import addon="xbmc.json" version="6.6.0" />
     <import addon="script.module.requests" version="1.1.0" />
   </requires>
@@ -11,15 +10,15 @@
       <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Automatically renames filenames of movies and TV shows</summary>
-    <description lang="en">Automatically renames movie and TV show files to match the provided pattern.</description>
-    <disclaimer lang="en">No guarantees</disclaimer>
-    <language></language>
+    <summary lang="en">Automatically renames file names of movies and TV shows file names according to the specified patterns. Moves TV shows to a separate season folder.</summary>
+    <description lang="en">The are numerous ways to optain video files from diverse sources. In most cases the filenames of do not match the wanted pattern. For example the video name is distorted or a weird extension is added to an episode. The name cleaner will rename the original movie files and episode entries once they are added to the XMBC library, making the names "pretty". The name cleaner also has the ability to move tv show episodes to their season folder, making it easy to add new files. Just dump them in your show folder and let the name cleaner do the rest.</description>
+    <disclaimer lang="en">No guarantees. The name cleaner will rename all files in the TV Show or Movie folders as they are indexed by XBMC. If the files are not properly added to XMBC, the script will rename them as is. There may be some problems with several language formats that are not covered by UTF-8 or have not yet been tested.</disclaimer>
+    <language>EN</language>
     <platform>all</platform>
-    <license></license>
+    <license>GPL</license>
     <forum></forum>
     <website></website>
     <email></email>
-    <source></source>
+    <source>https://github.com/artistinclosure/script.namecleaner.git</source>
   </extension>
 </addon>
